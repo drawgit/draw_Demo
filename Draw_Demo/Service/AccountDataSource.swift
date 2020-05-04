@@ -86,7 +86,7 @@ class AccountDataSource {
             do {
                 let decoer = JSONDecoder()
                 self.userInfo = try decoer.decode(UserVO.self, from: data)
-                if let _ = userInfo {isSignUp = true}
+                if let _ = self.userInfo {isSignUp = true}
 
             }catch{
                 print("#3 ERROR ==> \(error)")
