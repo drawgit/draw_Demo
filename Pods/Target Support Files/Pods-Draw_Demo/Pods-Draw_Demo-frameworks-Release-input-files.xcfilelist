@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Draw_Demo/Pods-Draw_Demo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework
