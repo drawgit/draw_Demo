@@ -57,7 +57,7 @@ class FidViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        FidDataSource.shard.fetch {
+        FidDataSource.shared.fetch {
             self.fidListView.reloadData()
         }
     }

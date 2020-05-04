@@ -9,7 +9,7 @@
 import Foundation
 
 class FidDataSource {
-    static let shard = FidDataSource()
+    static let shared = FidDataSource()
 
     private init(){
 
