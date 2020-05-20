@@ -12,7 +12,6 @@
 		660BB992245F1A6300B8C22D /* FidVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB991245F1A6300B8C22D /* FidVO.swift */; };
 		660BB994245F1FEC00B8C22D /* UserVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660BB993245F1FEC00B8C22D /* UserVO.swift */; };
 		662542B32403CAC200CD99B1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662542B22403CAC200CD99B1 /* DetailViewController.swift */; };
-		662E39DD2449EB0D00B33850 /* FiraSans-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 662E39DC2449EB0D00B33850 /* FiraSans-SemiBoldItalic.otf */; };
 		662E39DF244DE33000B33850 /* AdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662E39DE244DE33000B33850 /* AdvertViewController.swift */; };
 		663676FA242CA46A006AD428 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663676F9242CA46A006AD428 /* CategoryViewController.swift */; };
 		663676FC242CA670006AD428 /* SiginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663676FB242CA670006AD428 /* SiginInViewController.swift */; };
@@ -40,7 +39,6 @@
 		660BB991245F1A6300B8C22D /* FidVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidVO.swift; sourceTree = "<group>"; };
 		660BB993245F1FEC00B8C22D /* UserVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVO.swift; sourceTree = "<group>"; };
 		662542B22403CAC200CD99B1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		662E39DC2449EB0D00B33850 /* FiraSans-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FiraSans-SemiBoldItalic.otf"; path = "../../../fira-sans/FiraSans-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		662E39DE244DE33000B33850 /* AdvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertViewController.swift; sourceTree = "<group>"; };
 		663676F9242CA46A006AD428 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		663676FB242CA670006AD428 /* SiginInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiginInViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				66952A9D2403C27600917A82 /* AppDelegate.swift */,
 				66952A9F2403C27600917A82 /* SceneDelegate.swift */,
 				66952AA12403C27600917A82 /* ViewController.swift */,
-				662E39DC2449EB0D00B33850 /* FiraSans-SemiBoldItalic.otf */,
 				66952AA32403C27600917A82 /* Main.storyboard */,
 				66952AA92403C27800917A82 /* Assets.xcassets */,
 				66952AB42403C31500917A82 /* DrawLogo.png */,
@@ -254,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				66952AAD2403C27800917A82 /* LaunchScreen.storyboard in Resources */,
-				662E39DD2449EB0D00B33850 /* FiraSans-SemiBoldItalic.otf in Resources */,
 				66952AAA2403C27800917A82 /* Assets.xcassets in Resources */,
 				66952AB52403C31500917A82 /* DrawLogo.png in Resources */,
 				66952AA52403C27600917A82 /* Main.storyboard in Resources */,
