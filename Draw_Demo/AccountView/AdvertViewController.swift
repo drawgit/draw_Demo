@@ -41,7 +41,7 @@ class AdvertViewController: UIViewController {
         self.advertContetntTextView.layer.borderColor = UIColor.gray.cgColor
         self.advertContetntTextView.layer.borderWidth = 2.0
     }
-
+    // 키보드 올라오고 바깥화면 터치시
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.advertContetntTextView.resignFirstResponder()
         self.titleTextField.resignFirstResponder()
@@ -51,6 +51,7 @@ class AdvertViewController: UIViewController {
 }
 
 extension AdvertViewController : UIImagePickerControllerDelegate , UINavigationControllerDelegate {
+    //카메라 델레게잍
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let type = info[UIImagePickerController.InfoKey.mediaType] as? String {
             if type == kUTTypeImage as String {
@@ -73,5 +74,29 @@ extension AdvertViewController : UITextViewDelegate , UITextFieldDelegate {
 
 
 extension AdvertViewController {
+
+    func sendAPICall(){
+        guard let url = URL(string: "") else{
+            return
+        }
+        let session = URLSession.shared
+        session.dataTask(with: url) { (data, response, error) in
+            if let error = error {
+                return
+            }
+            guard let httpResponse = response as? HTTPURLResponse else{
+                return
+            }
+            guard (200..<400).contains(httpResponse.statusCode) else{
+                return
+            }
+
+            if let data = data {
+                // 광고관련 데이터 여기다가 내려줌
+            }
+
+
+        }
+    }
 
 }
