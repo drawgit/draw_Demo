@@ -9,5 +9,5 @@
 import Foundation
 
 struct UserVO : Codable {
-    
+    let userEmail : String
 }
