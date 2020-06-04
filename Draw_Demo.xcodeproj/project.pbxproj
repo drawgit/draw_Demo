@@ -18,6 +18,9 @@
 		66367702242CA6D2006AD428 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66367701242CA6D1006AD428 /* common.swift */; };
 		6638C1EF2403D3130027A766 /* Fid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638C1EE2403D3130027A766 /* Fid.swift */; };
 		665E30322403C8AF00306E3F /* FidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665E30312403C8AF00306E3F /* FidViewController.swift */; };
+		66624FBF247D040000EFC5FB /* AdvertVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66624FBE247D040000EFC5FB /* AdvertVO.swift */; };
+		66624FC1247D064900EFC5FB /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66624FC0247D064900EFC5FB /* UserDataSource.swift */; };
+		66624FC324890AD000EFC5FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66624FC224890AD000EFC5FB /* GoogleService-Info.plist */; };
 		6677CDF6240E71A10069D7A9 /* CalnderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677CDF5240E71A10069D7A9 /* CalnderViewController.swift */; };
 		66952A9E2403C27600917A82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66952A9D2403C27600917A82 /* AppDelegate.swift */; };
 		66952AA02403C27600917A82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66952A9F2403C27600917A82 /* SceneDelegate.swift */; };
@@ -45,6 +48,9 @@
 		66367701242CA6D1006AD428 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		6638C1EE2403D3130027A766 /* Fid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fid.swift; sourceTree = "<group>"; };
 		665E30312403C8AF00306E3F /* FidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidViewController.swift; sourceTree = "<group>"; };
+		66624FBE247D040000EFC5FB /* AdvertVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertVO.swift; sourceTree = "<group>"; };
+		66624FC0247D064900EFC5FB /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		66624FC224890AD000EFC5FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6677CDF5240E71A10069D7A9 /* CalnderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalnderViewController.swift; sourceTree = "<group>"; };
 		66952A9A2403C27600917A82 /* Draw_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draw_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66952A9D2403C27600917A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				660BB98E245F159300B8C22D /* FidDataSource.swift */,
+				66624FC0247D064900EFC5FB /* UserDataSource.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 			children = (
 				660BB991245F1A6300B8C22D /* FidVO.swift */,
 				660BB993245F1FEC00B8C22D /* UserVO.swift */,
+				66624FBE247D040000EFC5FB /* AdvertVO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 				6677CDF4240E71900069D7A9 /* CalnderView */,
 				662542B12403CAA200CD99B1 /* FidView */,
 				66952A9D2403C27600917A82 /* AppDelegate.swift */,
+				66624FC224890AD000EFC5FB /* GoogleService-Info.plist */,
 				66952A9F2403C27600917A82 /* SceneDelegate.swift */,
 				66952AA12403C27600917A82 /* ViewController.swift */,
 				66952AA32403C27600917A82 /* Main.storyboard */,
@@ -202,6 +211,7 @@
 				66952A972403C27600917A82 /* Frameworks */,
 				66952A982403C27600917A82 /* Resources */,
 				75AD9D75915951B72E271533 /* [CP] Embed Pods Frameworks */,
+				66624FC7248916F900EFC5FB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,6 +262,7 @@
 			files = (
 				66952AAD2403C27800917A82 /* LaunchScreen.storyboard in Resources */,
 				66952AAA2403C27800917A82 /* Assets.xcassets in Resources */,
+				66624FC324890AD000EFC5FB /* GoogleService-Info.plist in Resources */,
 				66952AB52403C31500917A82 /* DrawLogo.png in Resources */,
 				66952AA52403C27600917A82 /* Main.storyboard in Resources */,
 			);
@@ -260,6 +271,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		66624FC7248916F900EFC5FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n\n\n$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n\n$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n\n$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\n\n",
+				"",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Fabric/run\n";
+		};
 		75AD9D75915951B72E271533 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,12 +340,14 @@
 				66952AA82403C27600917A82 /* Draw_Demo.xcdatamodeld in Sources */,
 				66367702242CA6D2006AD428 /* common.swift in Sources */,
 				66952AA22403C27600917A82 /* ViewController.swift in Sources */,
+				66624FBF247D040000EFC5FB /* AdvertVO.swift in Sources */,
 				660BB992245F1A6300B8C22D /* FidVO.swift in Sources */,
 				6677CDF6240E71A10069D7A9 /* CalnderViewController.swift in Sources */,
 				66952A9E2403C27600917A82 /* AppDelegate.swift in Sources */,
 				66D24DB3243778AF009FAD56 /* DeviceManager.swift in Sources */,
 				660BB98F245F159300B8C22D /* FidDataSource.swift in Sources */,
 				66FB68CE24068EF5006FA3D3 /* FidCell.swift in Sources */,
+				66624FC1247D064900EFC5FB /* UserDataSource.swift in Sources */,
 				660BB994245F1FEC00B8C22D /* UserVO.swift in Sources */,
 				66C03E1A243A1BD7007DD460 /* SignUpViewController.swift in Sources */,
 				662E39DF244DE33000B33850 /* AdvertViewController.swift in Sources */,
@@ -470,7 +502,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y3L3GA8B9B;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5S3KFG99X7;
 				INFOPLIST_FILE = Draw_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,7 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y3L3GA8B9B;
+				DEVELOPMENT_TEAM = 5S3KFG99X7;
 				INFOPLIST_FILE = Draw_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
